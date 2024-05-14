@@ -4,6 +4,7 @@ Modal.setAppElement("#root");
 
 const NotificationModal = ({
   status,
+  mode,
   Content,
   acceptFunction,
   rejectdFunction,
@@ -28,7 +29,10 @@ const NotificationModal = ({
         contentLabel="Example Modal"
       >
         <div className="">
-          <h1>{Content}</h1>
+          <h1>
+            Incoming {mode} Call from
+            {Content?.name}
+          </h1>
           <div className="flex items-center justify-between p-6">
             {" "}
             <button

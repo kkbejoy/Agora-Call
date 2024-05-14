@@ -12,7 +12,7 @@ const Contacts = ({ user, videoCallFuc, voiceCallFuc }) => {
         Call
       </button>
       <button
-        onClick={() => videoCallFuc()}
+        onClick={() => videoCallFuc(user._id)}
         className="bg-green-700 my-4 p-3 rounded-md"
       >
         {" "}
