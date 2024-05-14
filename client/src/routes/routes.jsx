@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import LoginPage from "../pages/LoginPage";
 import ProfilePage from "../pages/ProfilePage";
 import VideoCallInterface from "../components/VideoCallInterface";
+import VoiceCallInterface from "../components/VoiceCallInterface";
 const loginRouter = {
   path: "/",
   element: <LoginPage />,
@@ -16,6 +17,10 @@ const userRouter = {
     {
       path: "call/:id",
       element: <VideoCallInterface />,
+    },
+    {
+      path: "voice/:id",
+      element: <VoiceCallInterface />,
     },
   ],
 };
